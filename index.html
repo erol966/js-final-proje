@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sadık Dostlarımız</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🐕 Sadık Dostlarımız</h1>
+      <div class="controls">
+        <button id="refreshBtn">Yeni Köpekler</button>
+        <button id="sortBtn">A → Z Sırala</button>
+        <button id="themeBtn">🌙 / ☀️</button>
+      </div>
+    </header>
+
+    <p id="loading" class="loading">Yükleniyor...</p>
+
+    <main>
+      <div id="cardContainer" class="card-container"></div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <section class="about">
+          <h2>Hakkımızda</h2>
+          <p>
+            Bu proje Dog CEO API kullanılarak geliştirilmiştir. Amacımız köpek
+            ırklarını görsel kartlar aracılığıyla tanıtmak ve kullanıcıya
+            keyifli bir deneyim sunmaktır...
+          </p>
+        </section>
+
+        <section class="contact">
+          <h2>İletişim</h2>
+          <ul>
+            <li><strong>E-posta:</strong> erolsevinnc@gmail.com</li>
+            <li><strong>Telefon:</strong> +90 545 647 07 94</li>
+            <li><strong>Adres:</strong> Ankara,Türkiye</li>
+          </ul>
+        </section>
+      </div>
+
+      <p class="copyright">© 2026 Dog CEO Projesi| Tüm Hakları Saklıdır</p>
+    </footer>
+
+    <div id="modal" class="modal">
+      <span id="closeModal">&times;</span>
+      <img id="modalImg" />
+      <h2 id="modalBreed"></h2>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
